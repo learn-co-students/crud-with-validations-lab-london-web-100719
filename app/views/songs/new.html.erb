@@ -1,0 +1,13 @@
+<h1>Songs Form</h1>
+
+<table>
+<%= form_for @song do |f| %>
+<tr><td>Song Title: </td> <td><%= f.text_field :title  %> </td></tr>
+<tr><td>Released? </td> <td><%= f.check_box :released  %> </td></tr>
+<tr><td>Release Year: </td> <td><%= f.number_field :release_year  %> </td></tr>
+<tr><td>Artist Name: </td> <td><%= f.text_field :artist_name %> </td></tr>
+<tr><td>Genre: </td> <td><%= f.text_field :genre %> </td></tr>
+<tr><td></td> <td><%= f.submit "Create Artist" %> </td></tr>
+
+<% end %>
+</table>

@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+<%@songs.each do |s|%>    
+        <tr>
+            <td><%=s.title%></td>
+            <td>with two columns</td>
+          <%end%>
+    </tbody>
+</table>
